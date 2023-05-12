@@ -1,0 +1,251 @@
+Sub CodigoNewtonRapshon()
+'
+' CodigoNewtonRapshon Macro
+'
+
+'
+    Range("B6").Select
+    ActiveCell.FormulaR1C1 = "Xn="
+    Range("C6").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("D6").Select
+    ActiveCell.FormulaR1C1 = "F"
+    Range("C6").Select
+    ActiveCell.FormulaR1C1 = ""
+    Range("D6").Select
+    ActiveCell.FormulaR1C1 = "()"
+    Range("C6").Select
+    ActiveCell.FormulaR1C1 = "x"
+    Range("C6").Select
+    ActiveCell.FormulaR1C1 = ""
+    Range("D6").Select
+    ActiveCell.FormulaR1C1 = "f(x)"
+    Range("D6").Select
+    ActiveCell.FormulaR1C1 = "f(x)="
+    Range("F6").Select
+    ActiveCell.FormulaR1C1 = "f'(x)"
+    Range("B8").Select
+    ActiveCell.FormulaR1C1 = "Iteracion"
+    Range("C8").Select
+    ActiveCell.FormulaR1C1 = "Xn"
+    Range("D8").Select
+    ActiveCell.FormulaR1C1 = "f(Xn)"
+    Range("E8").Select
+    ActiveCell.FormulaR1C1 = "f'(Xn)"
+    Range("F8").Select
+    ActiveCell.FormulaR1C1 = "Xn+1=Xn-f(xn)/f'(Xn)"
+    Range("B8").Select
+    Columns("F:F").ColumnWidth = 22.22
+    Range("G8").Select
+    ActiveCell.FormulaR1C1 = "%ERROR"
+    Range("B9").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("B10").Select
+    ActiveCell.FormulaR1C1 = "2"
+    Range("B11").Select
+    ActiveCell.FormulaR1C1 = "3"
+    Range("B12").Select
+    ActiveCell.FormulaR1C1 = "4"
+    Range("B13").Select
+    ActiveCell.FormulaR1C1 = "5"
+    Range("B14").Select
+    ActiveCell.FormulaR1C1 = "6"
+    Range("B15").Select
+    ActiveCell.FormulaR1C1 = "7"
+    Range("B16").Select
+    ActiveCell.FormulaR1C1 = "8"
+    Range("B17").Select
+    ActiveCell.FormulaR1C1 = "9"
+    Range("B18").Select
+    ActiveCell.FormulaR1C1 = "0"
+    Range("B18").Select
+    ActiveCell.FormulaR1C1 = "10"
+    Range("B19").Select
+    ActiveCell.FormulaR1C1 = "11"
+    Range("B20").Select
+    ActiveCell.FormulaR1C1 = "12"
+    Range("B21").Select
+    ActiveCell.FormulaR1C1 = "13"
+    Range("B22").Select
+    ActiveCell.FormulaR1C1 = "14"
+    Range("B23").Select
+    ActiveCell.FormulaR1C1 = "15"
+    Range("B24").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent6
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("D6").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent6
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("F6").Select
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorAccent6
+        .TintAndShade = 0
+        .PatternTintAndShade = 0
+    End With
+    Range("B8:G24").Select
+    Range("G24").Activate
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("B6:G6").Select
+    Range("G6").Activate
+    Selection.Borders(xlDiagonalDown).LineStyle = xlNone
+    Selection.Borders(xlDiagonalUp).LineStyle = xlNone
+    With Selection.Borders(xlEdgeLeft)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeTop)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeBottom)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlEdgeRight)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideVertical)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    With Selection.Borders(xlInsideHorizontal)
+        .LineStyle = xlContinuous
+        .ColorIndex = 0
+        .TintAndShade = 0
+        .Weight = xlThin
+    End With
+    Range("C9").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("C9").Select
+    Windows("Libro1").Activate
+    Range("C9").Select
+    ActiveCell.FormulaR1C1 = "=R[-3]C"
+    Range("C10").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("D9").Select
+    Range("H8").Select
+    Windows("Libro1").Activate
+    Range("D9").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("D9").Select
+    Application.CutCopyMode = False
+    Windows("Libro1").Activate
+    Range("D9").Select
+    ActiveCell.FormulaR1C1 = "=EXP(1)^-RC[-1]-LN(RC[-1])+3"
+    Range("D10").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("E9").Select
+    Application.CutCopyMode = False
+    Windows("Libro1").Activate
+    Range("E9").Select
+    ActiveCell.FormulaR1C1 = "=-(EXP(1)^-RC[-2] )-(1)/(RC[-2])"
+    Range("E10").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("F9").Select
+    Application.CutCopyMode = False
+    Windows("Libro1").Activate
+    Range("F9").Select
+    ActiveSheet.Paste
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("G9").Select
+    Application.CutCopyMode = False
+    Windows("Libro1").Activate
+    Range("G9").Select
+    ActiveCell.FormulaR1C1 = "=(RC[-1]-RC[-4])/RC[-1]*100"
+    Range("C6").Select
+    ActiveCell.FormulaR1C1 = "1"
+    Range("E6").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("E6").Select
+    ActiveCell.FormulaR1C1 = "e^(-x) -lnX +3"
+    Windows("Libro1").Activate
+    ActiveSheet.Paste
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("G6").Select
+    Selection.Copy
+    Range("H6").Select
+    Application.CutCopyMode = False
+    Windows("Libro1").Activate
+    Range("G6").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("G6").Select
+    ActiveCell.FormulaR1C1 = "(-e)^(-x) - 1/x"
+    Range("F2").Select
+    Windows("Libro1").Activate
+    ActiveSheet.Paste
+    Columns("E:E").ColumnWidth = 15.56
+    Columns("G:G").ColumnWidth = 15.33
+    Range("C10").Select
+    Windows("METODO DE NIUTIKSFBCFAHSHASB.xlsx").Activate
+    Range("C10").Select
+    Windows("Libro1").Activate
+    ActiveCell.FormulaR1C1 = "=R[-1]C[3]"
+    Range("D9:G9").Select
+    Selection.AutoFill Destination:=Range("D9:G10"), Type:=xlFillDefault
+    Range("D9:G10").Select
+    Range("C10:G10").Select
+    Selection.AutoFill Destination:=Range("C10:G24"), Type:=xlFillDefault
+    Range("C10:G24").Select
+    Range("G9:G24").Select
+    Range("G9").Select
+End Sub
